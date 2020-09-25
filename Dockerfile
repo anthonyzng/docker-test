@@ -1,6 +1,10 @@
 FROM node:12.18.4
+
 WORKDIR /app
-ADD . /app
+COPY package*.json ./
 RUN npm install
-EXPOSE 300
-CMD npm start
+
+COPY . ./
+
+EXPOSE 8888
+CMD ["node", "server.js"]
