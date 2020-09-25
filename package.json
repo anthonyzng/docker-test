@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "first nodejs",
   "main": "server.js",
+  "repository": {
+    "url": "https://github.com/anthonyzng/docker-test"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
